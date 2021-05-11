@@ -1,7 +1,12 @@
 import random   #standard library標準函數庫   
 #package（套件）裏面有很多module 模組
-r = random.randint(1,100) #包括1跟100
+
 count = 0
+start = input("請決定數字隨機範圍開始值：")
+start = int(start)
+end = input("請決定數字隨機範圍結束值：")
+end = int(end)
+r = random.randint(start,end) #包括1跟100
 while True:
 	count += 1 
 	answer = input("請寫入數字:")
